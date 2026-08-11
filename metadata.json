@@ -1,0 +1,8 @@
+{
+  "name": "Tax Reform Hub • Simulador Executivo IBS/CBS",
+  "description": "Simulador Executivo e Parecer Tributário da Reforma Tributária (PEC 45/2019 / EC 132/2023) com regras do Amazonas, Zona Franca de Manaus e Split Payment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
