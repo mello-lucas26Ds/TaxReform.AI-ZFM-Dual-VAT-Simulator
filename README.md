@@ -36,7 +36,7 @@ A client-side tax engine and executive opinion generator that simulates the tran
 
 ## 3. Demo
 
-- **Live Preview:** [Access Tax Reform Hub Live App]("https://1tax-reform-zfmvatsimulator2.ai.studio")
+- **Live Preview:** [Access Tax Reform Hub Live App](https://1tax-reform-zfmvatsimulator2.ai.studio)
 - **Interactive Workspace:** Tab navigation supporting **Dashboard**, **Split Payment**, **Audit Trail Memory**, and **Executive Technical Opinion**.
 
 ---
