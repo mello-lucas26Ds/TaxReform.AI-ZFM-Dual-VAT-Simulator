@@ -9,9 +9,9 @@ const STORAGE_KEYS = {
   SESSION_VISITED: "tax_reform_hub_session_active",
 };
 
-// Bases iniciais realistas para o projeto corporativo
-const BASE_VISITS = 1420;
-const BASE_USAGE = 3850;
+// Bases iniciais zeradas (persistência via localStorage)
+const BASE_VISITS = 0;
+const BASE_USAGE = 0;
 
 export interface CounterStats {
   visitsCount: number;

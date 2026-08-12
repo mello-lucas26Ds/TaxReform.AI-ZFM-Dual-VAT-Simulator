@@ -36,7 +36,7 @@ Plataforma corporativa de simulação fiscal e emissão de pareceres executivos 
 
 ## 3. Demonstração
 
-- **Link da Aplicação:** [Acessar Simulador ao Vivo](https://ais-pre-sfjb2o43sa3s3bxblyx3zo-277404039405.us-east1.run.app)
+- **Link da Aplicação:** [Acessar Simulador ao Vivo](https://1tax-reform-zfmvatsimulator2.ai.studio)
 - **Navegação Interativa:** Abas para **Dashboard de KPIs**, **Split Payment**, **Memória de Cálculo Auditável** e **Parecer Técnico A4**.
 
 ---
@@ -114,16 +114,12 @@ graph TD
 O projeto é executado no lado do cliente (client-side) e não exige banco de dados local. O arquivo `.env.example` está incluído na raiz do projeto:
 
 ```env
-# GEMINI_API_KEY: Chave opcional para extensões de IA no servidor (se habilitado)
-GEMINI_API_KEY=""
-
 # APP_URL: URL base da aplicação
 APP_URL="http://localhost:3000"
 ```
 
 | Variável | Obrigatória? | Padrão | Descrição |
 | :--- | :---: | :--- | :--- |
-| `GEMINI_API_KEY` | Opcional | `""` | Chave opcional para recursos com IA Gemini |
 | `APP_URL` | Opcional | `http://localhost:3000` | Endereço raiz da aplicação |
 
 ---
@@ -138,10 +134,10 @@ APP_URL="http://localhost:3000"
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/seu-usuario/tax-reform-hub.git
+git clone https://github.com/mello-lucas26Ds/TaxReform.AI-ZFM-Dual-VAT-Simulator.git
 
 # 2. Entrar no diretório do projeto
-cd tax-reform-hub
+cd TaxReform.AI-ZFM-Dual-VAT-Simulator
 
 # 3. Instalar dependências
 npm install
@@ -156,10 +152,10 @@ Acesse `http://localhost:3000` em seu navegador.
 
 ```bash
 # Gerar imagem da aplicação
-docker build -t tax-reform-hub:latest .
+docker build -t taxreform-dual-vat-simulator:latest .
 
-# Executar contêiner na porta 3000
-docker run -d -p 3000:3000 --name tax-simulator tax-reform-hub:latest
+# Executar contêiner na porta 8080
+docker run -d -p 8080:80 --name tax-simulator taxreform-dual-vat-simulator:latest
 
 # Encerrar contêiner
 docker stop tax-simulator && docker rm tax-simulator

@@ -43,14 +43,14 @@ export function useTaxSimulation() {
 
       if (type === "checkbox") {
         const checked = (e.target as HTMLInputElement).checked;
-        setForm((prev) => ({
+        setForm((prev: SimulacaoInput) => ({
           ...prev,
           [name]: checked,
         }));
         return;
       }
 
-      setForm((prev) => ({
+      setForm((prev: SimulacaoInput) => ({
         ...prev,
         [name]: value,
       }));
@@ -59,28 +59,28 @@ export function useTaxSimulation() {
   );
 
   const setTipoIcmsMode = useCallback((mode: TipoIcmsMode) => {
-    setForm((prev) => ({
+    setForm((prev: SimulacaoInput) => ({
       ...prev,
       tipo_icms_mode: mode,
     }));
   }, []);
 
   const setBeneficioFiscal = useCallback((val: string | null) => {
-    setForm((prev) => ({
+    setForm((prev: SimulacaoInput) => ({
       ...prev,
       beneficio_fiscal: val,
     }));
   }, []);
 
   const setRegimeZFM = useCallback((val: RegimeZFM) => {
-    setForm((prev) => ({
+    setForm((prev: SimulacaoInput) => ({
       ...prev,
       regime_zfm: val,
     }));
   }, []);
 
   const setSplitModalidade = useCallback((val: SplitPaymentModalidade) => {
-    setForm((prev) => ({
+    setForm((prev: SimulacaoInput) => ({
       ...prev,
       split_modalidade: val,
     }));

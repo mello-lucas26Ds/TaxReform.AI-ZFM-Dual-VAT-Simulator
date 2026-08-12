@@ -1,5 +1,5 @@
 {
-  "name": "tax-reform-hub",
+  "name": "taxreform-dual-vat-simulator",
   "private": true,
   "version": "1.0.0",
   "description": "Simulador Executivo e Parecer Tributário da Reforma Tributária (EC 132/2023 / PLP 68/2024) com foco no Amazonas, ZFM e Split Payment",
@@ -21,8 +21,9 @@
     "vite": "^6.2.3"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
     "tailwindcss": "^4.1.14",

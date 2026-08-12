@@ -36,7 +36,7 @@ A client-side tax engine and executive opinion generator that simulates the tran
 
 ## 3. Demo
 
-- **Live Preview:** [Access Tax Reform Hub Live App](https://ais-pre-sfjb2o43sa3s3bxblyx3zo-277404039405.us-east1.run.app)
+- **Live Preview:** [Access Tax Reform Hub Live App]("https://1tax-reform-zfmvatsimulator2.ai.studio")
 - **Interactive Workspace:** Tab navigation supporting **Dashboard**, **Split Payment**, **Audit Trail Memory**, and **Executive Technical Opinion**.
 
 ---
@@ -114,16 +114,12 @@ graph TD
 The application is client-side and requires no mandatory server environment variables to run locally. An `.env.example` file is included in the project root:
 
 ```env
-# GEMINI_API_KEY: Optional key for server-side AI extensions (if enabled)
-GEMINI_API_KEY=""
-
 # APP_URL: Base URL of the deployed application
 APP_URL="http://localhost:3000"
 ```
 
 | Variable | Required? | Default | Purpose |
 | :--- | :---: | :--- | :--- |
-| `GEMINI_API_KEY` | Optional | `""` | Provided for optional Gemini AI extensions |
 | `APP_URL` | Optional | `http://localhost:3000` | Canonical application root URL |
 
 ---
@@ -138,10 +134,10 @@ APP_URL="http://localhost:3000"
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/tax-reform-hub.git
+git clone https://github.com/mello-lucas26Ds/TaxReform.AI-ZFM-Dual-VAT-Simulator.git
 
 # 2. Enter project directory
-cd tax-reform-hub
+cd TaxReform.AI-ZFM-Dual-VAT-Simulator
 
 # 3. Install dependencies
 npm install
@@ -156,10 +152,10 @@ Access `http://localhost:3000` in your web browser.
 
 ```bash
 # Build the container image
-docker build -t tax-reform-hub:latest .
+docker build -t taxreform-dual-vat-simulator:latest .
 
-# Run container on port 3000
-docker run -d -p 3000:3000 --name tax-simulator tax-reform-hub:latest
+# Run container on port 8080
+docker run -d -p 8080:80 --name tax-simulator taxreform-dual-vat-simulator:latest
 
 # Stop container
 docker stop tax-simulator && docker rm tax-simulator
